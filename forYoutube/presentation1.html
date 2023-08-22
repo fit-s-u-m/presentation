@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Nehemiah</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/dracula.css">
+		<link rel="stylesheet" href="../reveal.js-plugins/highlight/monokai.css">
+		<link rel="stylesheet" href="../reveal.js-plugins/chalkboard/style.css"
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							# Nehemiah
+							### presentes
+							<div id="the_eye"></div>
+							---
+
+							## Made by 
+							$\mathscr{Fitsum}$ 
+						</textarea>
+					</section>
+				</section>
+
+				<section>
+					<h3>programming paradimes</h3>  
+					<h5>
+						<em>A programming paradigm is a philosophy, style, or general approach to writing code.</em>
+					</h5>
+					<p> 
+						Its an way in designing software systems
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Basically there are two common programming paradigms
+					</h3>
+				</section>
+
+				<section data-transition="zoom-in zoom-out">
+					<h3 class="r-fit-text">imperative</h3>
+				</section>
+				<section data-transition="zoom-in zoom-out" > 
+					<h3 class="r-fit-text">declarative</h3>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Imperative paradigm is way of telling the machine how to change its state
+							*it finds a solution of a problem in a Series of steps*
+							<br>
+							do this then this kinda style
+
+							---
+							###	Procedural
+							*This paradigm structure the code into groups of procedures*
+							---
+
+							```
+							function add(x,y){
+								console.log(x+y);
+							}
+							function multiply(x,y){
+								console.log(x*y);
+							}
+							function divide(x,y){
+								if(y != 0)
+									console.log(x/y);
+							}
+							let x = 3;
+							let y = 8;
+							add(x, y)
+							multiply(x, y)
+							divide(x, y)
+							```
+							---
+							### Object oriented 
+							---
+
+							###### Is OOP also imperative paradigm ?
+							*oop*
+							<br>
+							which groups instructions with the part of the state they operate on
+							*It encapsulates the states into objects and
+							then it calls them in imperative way*
+
+							---
+							```
+							class Dog {
+								name
+								age
+								constructor (name, age){
+									this.name = name;	
+									this.age = age;
+								}
+								stand_up(){
+								// .............
+								}
+								sit(){
+								// .............
+								}
+								turn_around(){
+								// .............
+								}
+							}
+
+							let my_dog = new Dog("rocky",3);
+							my_dog.stand_up(); // do this 
+							my_dog.sit(); // then this 
+							my_dog.turn_around();
+							```
+						</textarea>
+					</section>
+				</section>
+
+				<section> <section data-markdown>
+						<textarea data-template>
+							### declarative paradigms
+							is a paradigm in which the programmer merely declares properties of the desired result
+							, but not how to compute it
+							*Declarative programming is all about hiding away complexity and bringing programming languages closer to human language and thinking.*
+							---
+							### Functional 
+							in which the desired result is declared as the value of a series of function applications
+							*it is derived purely from mathematics called lamda calculs*
+							---
+							<img src="funtion.png" width="900" height="600">
+
+							--- 
+							---
+							``` js
+							function topStudents(array){
+							 	return array
+											.map(item => item * (100/40))
+											.filter(item => item > 80 );
+							}
+
+							const arr = [39, 12, 35, 26, 29];
+							const new_arr= topStudents(arr); // [ 97.5, 87.5 ]   
+							```
+							---
+							## there are also others but i didn't work with them so lets skip them  
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<h3>Reference</h3>
+					<a href="https://en.wikipedia.org/wiki/Programming_paradigm">wiki</a>
+					<br>
+					<a href="https://digitalfellows.commons.gc.cuny.edu/2018/03/12/an-introduction-to-programming-paradigms/">GC digital fellows</a>
+				</section>
+
+			</div>
+		</div>
+
+
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../reveal.js-plugins/notes/notes.js"></script>
+		<script src="../reveal.js-plugins/markdown/markdown.js"></script>
+		<script src="../reveal.js-plugins/highlight/highlight.js"></script>
+		<script src="../reveal.js-plugins/math/math.js"></script>
+		<script src="../reveal.js-plugins/chalkboard/plugin.js"></script>
+		<!-- <script src="../reveal.js-plugins/mermaid/mermaid.js"></script> -->
+		<script>
+			Reveal.initialize({
+				hash: true,
+				 controls: false,
+				chalkboard: {
+					theme: "whiteboard"
+				},
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealChalkboard  ]
+			});
+		</script>
+	</body>
+</html>
