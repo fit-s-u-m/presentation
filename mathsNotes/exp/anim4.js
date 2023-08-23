@@ -10,14 +10,29 @@ const sketch5= p =>{
 
 		stretchy = new p.Sprite();
 		stretchy.draw = () => {
-			p.fill(237, 205, 0);
+			p.noFill()
+			p.fill(237, 205, 0,200);
 			p.push();
+				//face
 				p.rotate(stretchy.direction);
-				p.ellipse(0, 0, 20+ stretchy.speed, 20 - stretchy.speed);
+				p.ellipse(0, 0, 80+ stretchy.speed, 100 - stretchy.speed);
 			p.pop();
-			p.noCursor()
+				//eye
+				p.fill(255,100)
+				p.ellipse(20, -10, 20,25);
+				p.ellipse(-20, -10, 20,25 );
+			p.push();
+				let ex1 = p.map (p.mouseX,0,p.width,15,25)
+				let ex2 = p.map (p.mouseX,0,p.width,-25,-15)
+				let ey1 = p.map (p.mouseY,0,p.height,-15,-5)
+				p.fill(0)
+				p.ellipse(ex1, ey1, 10, 10);
+				p.ellipse(ex2, ey1, 10, 10);
+			p.pop();
 	  }
-		stretchy.update = () => stretchy.moveTowards(p.mouse, 0.09)
+		stretchy.update = () => {
+			// stretchy.moveTowards(p.mouse, 0.009)
+		}
 		
 
 	} 
