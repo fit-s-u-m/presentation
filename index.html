@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Nehemiah</title>
+
+		<link rel="stylesheet" href="./dist/reset.css">
+		<link rel="stylesheet" href="./dist/reveal.css">
+		<link rel="stylesheet" href="./dist/theme/beige.css">
+		<link rel="stylesheet" href="./reveal.js-plugins/highlight/monokai.css">
+		<link rel="stylesheet" href="./reveal.js-plugins/chalkboard/style.css"
+
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+				<div class="container">
+					<div id="p53"></div>
+				</div>
+				</section>
+
+				<section>
+					<section data-markdown>
+					<textarea data-template>
+						# Nehemiah
+						#### presentes
+						---
+						## Made by 
+						 Fitsum
+					</textarea>
+					</section>
+				</section>
+
+				<section  data-transition="convex">
+					  <div id="p55"></div>
+					<section data-markdown>
+					<textarea data-template>
+						# Trigonometry
+						---
+						# What is it 
+						---
+						It has many definition  many of you will know the definition that trigonometry is the study of triangles,
+						but this is half the story trigonometry is also about ratios and also its about circles and rotations
+						---
+						<img src="./img/noTangles.png">
+						<!-- <h1 class="r-fit-text">Triangles</h1> -->
+						<!-- <div class="r-stack"> -->
+						<!-- <img class="fragment custom blur1" src="./img/triangle.jpg" width="1000" height="700"> -->
+						<!-- <img class="fragment" src="./img/circle.jpg" width="700" height="700"> -->
+							<!-- <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400"> -->
+						<!-- </div> -->
+						---
+						there are six functions that builds it
+						---
+						<style>
+             .fragment.blur {
+	            filter: blur(4px);
+              }
+           	.fragment.blur.visible {
+          		filter: none;
+	            }
+             .fragment.blur1 {
+          		filter: none;
+              }
+           	.fragment.blur1.visible {
+	            filter: blur(40px);
+						}
+						</style>
+						<section data-transition="zoom">
+							<p class="fragment custom blur highlight-blue fade-left">sine ($sin\theta$)</p>
+							<p class="fragment custom blur highlight-red fade-left">cosine ($cos\theta$)</p>
+							<p class="fragment custom blur highlight-green fade-left">tanget ($tan\theta$)</p>
+							<p class="fragment fade-in-then-out">reciprocals</p>
+							<p class="fragment custom blur highlight-blue fade-right">cosec ($csc\theta$)</p>
+							<p class="fragment custom blur highlight-red fade-right">sec ($sec\theta$)</p>
+							<p class="fragment custom blur highlight-green fade-right">cotanget ($cot\theta$)</p>
+						</section>
+						---
+						<p> lets try to see what is $sin\theta$ </p> 
+						---
+						$sin \theta = \frac{opp}{hyp}$
+						---
+						but why?
+					</textarea>
+					</section>
+				</section>
+
+				<section  data-transition="zoom">
+					<section data-markdown>
+					<textarea data-template>
+
+						sin is the vertical distance of a circling ball
+						<img src="./img/Sinus_und_Kosinus_am_Einheitskreis_1.svg">
+						---
+						<div class="container">
+							<div>
+								<div id="button-container"></div>
+								<div id="can-container2">	</div>
+							</div>
+							<div id="p52"></div>
+						</div>
+						---
+						<div class="container">
+							<div>
+								<div id="button-container"></div>
+								<div id="can-container"></div>
+							</div>
+							<div id="p5"></div>
+						</div>
+
+
+					</textarea>
+					</section>
+				</section>
+
+				<section>
+					<div id="p55"></div>
+					<section data-markdown>
+					<textarea data-template>
+						### to summarize
+						- sin is the vertical distance of a circling ball
+						- cos is exactly the same as sin but shifted by 90 degrees
+						- every trigonometric function has three properties 
+							- radius/amplitude
+							- phase shift 
+							- frequency
+						- the general equation of wave is 
+						   `$$y(t) =A sin(2\pi f t + \phi)$$`
+					</textarea>
+					</section>
+				</section>
+
+			</div>
+		</div>
+		<script src="./dist/reveal.js"></script>
+		<script src="./reveal/notes/notes.js"></script>
+		<script src="./reveal/markdown/markdown.js"></script>
+		<script src="./reveal/highlight/highlight.js"></script>
+		<script src="./reveal/math/math.js"></script>
+		<script src="./reveal/chalkboard/plugin.js"></script>
+
+    <script language="javascript" type="text/javascript" src="mathsNotes/exp/p5.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="mathsNotes/exp/anim1.js"></script>
+    <script language="javascript" type="text/javascript" src="mathsNotes/exp/anim2.js"></script>
+
+    <script language="javascript" type="text/javascript" src="./p5.play/planck.js"></script>
+    <script language="javascript" type="text/javascript" src="./p5.play/p5play.js"></script>
+    <script language="javascript" type="text/javascript" src="mathsNotes/exp/anim3.js"></script>
+    <script language="javascript" type="text/javascript" src="mathsNotes/exp/anim4.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="./exp/anim4.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="./exp/lib/addons/p5.sound.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="./exp/lib/p5.scribble.js"></script> -->
+		<script>
+			Reveal.initialize({
+				hash: true,
+				controls:  false,
+				chalkboard: {
+					theme: "whiteboard"
+				},
+				keyboard:{
+					80:null,
+					83:null,
+					32:null,
+					38:null,
+					40:null,
+					37:null,
+					39:null
+				},
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ,RevealChalkboard]
+			});
+		</script>
+
+	</body>
+
+</html>
