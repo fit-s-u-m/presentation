@@ -33,7 +33,7 @@ const sketch3 = p =>{
 
 			}
 			p.world.gravity.y = 10
-		},2000)
+		},1800)
 
 			bricks = new p.Group();
 			bricks.w = 20;
@@ -60,8 +60,8 @@ const sketch3 = p =>{
 
 	} 
 	p.draw = ()=>{
-		// p.clear()
-		p.background(247, 243, 222,100)
+ 	 	p.clear()
+		// p.background(247, 243, 222,100)
 
 		let k=10
 		let phi=0
