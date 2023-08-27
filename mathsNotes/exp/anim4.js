@@ -23,6 +23,28 @@ const sketch5= p =>{
 		},300)
 
 		stretchy = new p.Sprite(p.width/2+200,p.height-100);
+		stretchy.draw = () => {
+			p.noFill()
+			p.fill(237, 205, 0,200);
+			p.push();
+
+			//face
+			p.image(img, 0, -10,150,150);
+		  mouth =  p.image(lipArray[0], 0,45,150,150);
+			p.pop();
+				//eye
+				p.fill(255,100)
+				p.ellipse(30, -10, 20,25);
+				p.ellipse(-30, -10, 20,25 );
+			p.push();
+				let ex1 = p.map (p.mouseX,0,p.width,25,35)
+				let ex2 = p.map (p.mouseX,0,p.width,-35,-25)
+				let ey1 = p.map (p.mouseY,0,p.height,-15,-5)
+				p.fill(0)
+				p.ellipse(ex1, ey1, 10, 10);
+				p.ellipse(ex2, ey1, 10, 10);
+			p.pop();
+	  }
 
 		let str = "hello every one".toLowerCase()
 		for(let i =0; i<=str.length;i++){
@@ -77,48 +99,14 @@ const sketch5= p =>{
 			}
 			else word.push(lipArray[0])
 		}
-		stretchy.draw = () => {
-			p.noFill()
-			p.fill(237, 205, 0,200);
-			p.push();
-
-				//face
-				// p.rotate(-stretchy.direction);
-				// p.ellipse(-100, 100, 80+ stretchy.speed, 100 - stretchy.speed);
-				p.image(img, 0, -10,150,150);
-		   mouth =  p.image(lipArray[count[0]], 0,45,150,150);
-			p.pop();
-				//eye
-				p.fill(255,100)
-				p.ellipse(30, -10, 20,25);
-				p.ellipse(-30, -10, 20,25 );
-			p.push();
-				let ex1 = p.map (p.mouseX,0,p.width,25,35)
-				let ex2 = p.map (p.mouseX,0,p.width,-35,-25)
-				let ey1 = p.map (p.mouseY,0,p.height,-15,-5)
-				p.fill(0)
-				p.ellipse(ex1, ey1, 10, 10);
-				p.ellipse(ex2, ey1, 10, 10);
-			p.pop();
-	  }
-		stretchy.update = () => {
-			// stretchy.moveTowards(p.mouse, 0.009)
-			// stretchy.x=p.width
-			// stretchy.y=p.height
-
-		}
-		
-
 	} 
 	p.draw = ()=>{
 		p.clear()
 
 	}
-	// p.windowResized = ()=> { 
-	// 	p.resizeCanvas(p.windowWidth,p.windowHeight)
-	// 	radius  = p.width/6
-	// 	ballRadius = radius/8
-	// }
+	p.windowResized = ()=> { 
+		p.resizeCanvas(p.windowWidth,p.windowHeight)
+	}
 	
 
 }
