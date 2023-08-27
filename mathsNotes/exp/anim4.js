@@ -10,9 +10,9 @@ let count=0
 const sketch5= p =>{
 	
 	p.preload = ()=> {
-		img = p.loadImage('http://127.0.0.1:8080/char1.png');
+		img = p.loadImage('https://fit-s-u-m.github.io/presentation/mathsNotes/img/char1.png');
 		for (let i=1; i<14;i++){
-			lipArray.push(p.loadImage("http://127.0.0.1:8080/mpv-shot"+i+".png"))
+			lipArray.push(p.loadImage("https://fit-s-u-m.github.io/presentation/mathsNotes/img/mpv-shot"+i+".png"))
 		}
 	}
 	p.setup = ()=>{
