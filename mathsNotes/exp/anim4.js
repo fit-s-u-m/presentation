@@ -86,7 +86,7 @@ const sketch5= p =>{
 				// p.rotate(-stretchy.direction);
 				// p.ellipse(-100, 100, 80+ stretchy.speed, 100 - stretchy.speed);
 				p.image(img, 0, -10,150,150);
-		   mouth =  p.image(lipArray[count%13], 0,45,150,150);
+		   mouth =  p.image(lipArray[count[0]], 0,45,150,150);
 			p.pop();
 				//eye
 				p.fill(255,100)
